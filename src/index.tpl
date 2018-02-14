@@ -6,8 +6,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Alexandru I. Neacsu | Buisness Consultant in Bucharest, Romania</title>
+    <title>Alexandru I. Neacsu | {{ title }} in {{ location }}</title>
     <meta property="og:title" content="Alexandru I. Neacsu">
     <meta property="og:locale" content="en_US">
     <meta name="description" content="Buisness Consultant in Bucharest, Romania">
@@ -15,7 +14,7 @@
     <link rel="canonical" href="http://alexneacsu.me/">
     <meta property="og:url" content="http://alexneacsu.me/">
     <meta property="og:site_name" content="Alexandru I. Neacsu">
-
+    
     <script type="application/ld+json">
         {"name":"Alexandru Neacsu",
         "description":"Consultant in Bucharest, Romania",
@@ -31,7 +30,7 @@
     </script>
 
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <link href="assets/css/app.css" rel="stylesheet">
+    <link href="assets/css/app.css?v={{ [1,2,3,4,5,6,7,8,9] | random }}" rel="stylesheet">
 
 </head>
 
@@ -40,16 +39,22 @@
         <h1 class="title">
             <a href="http://alexneacsu.me/">Alexandru I. Neacsu</a>
             <small>
-                <i class="fas fa-qrcode"></i>Consultant in Bucharest, Romania</small>
+                <i class="fas fa-qrcode"></i>{{ title }} in {{ location }}</small>
         </h1>
         <p>Alexandru Neacsu developed an early passion for programming and hi-tech world. He started offering professional web
             services and multimedia content through his own firm (SixAM) in 2009 and continued in 2011 to collaborate with
             several players on the digital market.</p>
         <p>He released numerous innovative products, among them mentioning the Foursquare Maps application and the popular social
             platform search engine Droopy6.</p>
-        <p>ith several years’ tenure in management, including a senior-level position. During this time, he managed to build
+        <p>He has several years’ tenure in management, including a senior-level position. During this time, he managed to build
             a vast network of experienced online professionals.</p>
-        <p>php as3 android java html5 WORK Tomorrow Interactive</p>
+
+        <ul class="tags">
+            {% for tag in tags %}
+                <li>#{{ tag }}</li>
+            {% endfor %}
+        </ul>
+
     </div>
 
 </body>
