@@ -1,9 +1,0 @@
-title: Alexandru I. Neacsu
-description: Buisness Consultant in Bucharest, Romania
-google_analytics: 
-env: production
-plugins:
-- jekyll-mentions
-- github-pages
-- octopress-minify-html
-- jekyll-seo-tag
