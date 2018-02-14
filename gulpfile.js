@@ -2,12 +2,11 @@ var gulp = require("gulp");
 
 var connect = require("gulp-connect"),
     sass = require("gulp-sass"),
-    htmlmin = require("gulp-htmlmin");
-
-
+    htmlmin = require("gulp-htmlmin")
+    ghpages = require("gh-pages");
 
 gulp.task("s",["sass","build","watch"], function(){
-    connect.server({ 
+    return connect.server({ 
         root: ".", 
         livereload: true 
     });
@@ -29,6 +28,12 @@ gulp.task("build", function(){
            processScripts: ["application/ld+json"]
          }))
        .pipe(gulp.dest("."));
+})
+
+gulp.task("publish", function(){
+    return ghpages.publish("public", function(err) {
+        console.log(error);
+    });
 })
 
 gulp.task("watch", function() {

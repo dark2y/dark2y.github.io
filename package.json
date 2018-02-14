@@ -20,6 +20,7 @@
     "gulp": "^3.9.1"
   },
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "gulp-connect": "^5.2.0",
     "gulp-htmlmin": "^4.0.0",
     "gulp-livereload": "^3.8.1",
