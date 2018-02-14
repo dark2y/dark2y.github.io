@@ -386,8 +386,10 @@ body {
 .container {
   width: 60%;
   margin: 0 auto;
+  max-width: 700px;
   padding: 20px;
-  min-height: 680px; }
+  min-height: 680px;
+  text-align: justify; }
 
 .home .title {
   font-size: 40px; }
@@ -397,3 +399,11 @@ body {
     margin-top: 6px; }
     .home .title small i {
       margin-right: 7px; }
+
+/** Other stuff **/
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 90%;
+    height: 100%;
+    transition: background-color 0.5s ease;
+    background: rgba(255, 255, 255, 0.8); } }
