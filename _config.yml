@@ -1,9 +1,9 @@
-title: Dark2y.GitHub.io
-description: 
+title: Alexandru I. Neacsu
+description: Buisness Consultant in Bucharest, Romania
 google_analytics: 
-show_downloads: true
-theme: jekyll-theme-cayman
-
-gems:
-  - jekyll-mentions
-  - github-pages
+env: production
+plugins:
+- jekyll-mentions
+- github-pages
+- octopress-minify-html
+- jekyll-seo-tag
