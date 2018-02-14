@@ -1,25 +1,28 @@
 var gulp = require("gulp");
+var ghpages = require("gh-pages");
 
 var connect = require("gulp-connect"),
     sass = require("gulp-sass"),
     htmlmin = require("gulp-htmlmin")
-    ghpages = require("gh-pages");
+    inlineCss = require("gulp-inline-css");
 
-gulp.task("s",["sass","build","watch"], function(){
-    return connect.server({ 
-        root: ".", 
+gulp.task("s",["build","watch"], function(){
+    connect.server({ 
+        root: "public", 
         livereload: true 
     });
 });
 
 gulp.task("sass", function(){
     return gulp
-        .src("./sass/**/*.scss")
-        .pipe(sass().on("error", sass.logError))
-        .pipe(gulp.dest("./assets/css/"));
+      .src("./sass/**/*.scss")
+      .pipe(sass({
+            // outputStyle: "compressed"
+          }).on("error", sass.logError))
+      .pipe(gulp.dest("./public/assets/css/"));
 })
 
-gulp.task("build", function(){
+gulp.task("build",["sass"], function(){
      return gulp
        .src("src/*.html")
        .pipe(htmlmin({
@@ -27,7 +30,7 @@ gulp.task("build", function(){
            minifyJS: true,
            processScripts: ["application/ld+json"]
          }))
-       .pipe(gulp.dest("."));
+       .pipe(gulp.dest("public"));
 })
 
 gulp.task("publish", function(){
@@ -38,5 +41,5 @@ gulp.task("publish", function(){
 
 gulp.task("watch", function() {
   gulp.watch("src/**/*.html", ["build"]);
-  gulp.watch("sass/*.sass", ["sass"]);
+  gulp.watch("sass/**/*.sass", ["sass"]);
 });
