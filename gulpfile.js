@@ -4,10 +4,12 @@ var util = require("gulp-util");
 
 var connect = require("gulp-connect"),
     sass = require("gulp-sass"),
-    htmlmin = require("gulp-htmlmin")
-    inlineCss = require("gulp-inline-css")
-    nunjucks = require("gulp-nunjucks")
-    rename = require("gulp-rename");
+    htmlmin = require("gulp-htmlmin"),
+    inlineCss = require("gulp-inline-css"),
+    nunjucks = require("gulp-nunjucks"),
+    rename = require("gulp-rename"),
+    uglify = require('gulp-uglify'),
+    cleanCSS = require('gulp-clean-css');
 
 var config = require("./settings.json");
 
@@ -29,6 +31,22 @@ gulp.task("sass", function() {
     )
     .pipe(gulp.dest("./public/assets/css/"));
 });
+
+// gulp.task("scripts", function(){
+
+//      gulp
+//        .src(includes.js)
+//        .pipe(uglify())
+//        .pipe(rename("app.min.js"))
+//        .pipe(gulp.dest("./public/assets/js/"));
+
+//     gulp
+//       .src(includes.css)
+//       .pipe(cleanCSS())
+//       .pipe(rename("material.min.css"))
+//       .pipe(gulp.dest("./public/assets/css/"));
+      
+// });
 
 gulp.task("build", function(){
      return gulp

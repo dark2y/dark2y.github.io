@@ -15,43 +15,87 @@ ul, ol {
 }
 
 body{
+    color: #252525;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+
+.outer{
     background: url(../images/me.jpg) no-repeat;
     background-position: bottom right;
     color: #252525;
-    font-family: 'Lato', sans-serif;
+    max-width: 80%;
+    margin: 0 auto;
+    height: 100%;
 }
 
 .container {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
+    margin-top: 50px;
     max-width: 700px;
-    padding: 20px;
-    min-height: 680px;
+    background: #ffffffc7;
     text-align: justify;
 }
 
-.home {
-    .title {
-        font-size: 40px;
-        small{
-            display: block;
-            font-size: 16px;
-            margin-top: 6px;
+.call-to-action{
+    transition: all 0.3s ease;
+    background: #139cbf;
+    color: #fff;
+    padding: 14px 0px;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px 0px;
+    display: block;
+    &:hover{
+        background: #23aed2;
+    }
+    i{
+        padding-left: 10px;
+    }
+}
+
+.social-buttons{
+    li {
+        display: inline-block;
+        padding-right: 10px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        .button {
+            transition: all 0.3s ease;
+            color: #545454;
+            background: #e0e0e0c7;
+            padding: 7px 12px;
+            &:hover{
+                color: #b34d4d;
+            }
             i {
-                margin-right: 7px;
+                padding-right: 5px;
             }
         }
     }
-    .tags {
-        li {
-            display: inline-block;
-            padding: 10px;
-            padding: 5px 11px;
-            color: #fff;
-            background: #272727;
-            margin: 3px 10px;
-            margin-left: 0px;
+}
+
+.title {
+    font-size: 40px;
+    small{
+        display: block;
+        font-size: 16px;
+        margin-top: 6px;
+        i {
+            margin-right: 7px;
         }
+    }
+}
+.tags {
+    padding: 25px 0px;
+    margin-bottom: 15px;
+    li {
+        display: inline-block;
+        padding: 10px;
+        padding: 0px;
+        padding-right: 7px;
+        color: #797979;
     }
 }
 

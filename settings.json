@@ -2,5 +2,14 @@
     "enviroment": "dev",
     "title": "Consultant",
     "location": "Bucharest, Romania",
-    "tags": ["php","actionscript","vi","html5","angular","javascript","ec6"]
+    "tags": ["php","actionscript","vi","html5","angular","javascript","ec6"],
+    "callToAction": "Get in touch with me",
+    "links": [
+        {"title": "Linkedin", "button": ["fa-linkedin", "https://www.linkedin.com/in/alexandru-neacsu/"]},
+        {"title": "Github", "button": ["fa-github", "https://github.com/dark2y"]},
+        {"title": "Medium", "button": ["fa-medium", "https://medium.com/@dark2y"]},
+        {"title": "AngelList", "button": ["fa-angellist", "https://angel.co/dark2y"] },
+        {"title": "Instagram", "button": ["fa-instagram", "http://instagram.com/dark2y"]},
+        {"title": "Twitter", "button": ["fa-twitter", "https://twitter.com/dark2y"]}
+    ]
 }

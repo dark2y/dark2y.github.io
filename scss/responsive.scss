@@ -1,8 +1,20 @@
 @media only screen and (max-width: 700px) {
+    body{
+        overflow: scroll;
+    }
+    .outer{
+        max-width: 100%;
+    }
     .container {
-        width: 90%;
+        width: auto;
         height: 100%;
+        padding: 0px 30px;
         transition: background-color 0.5s ease;
         background: rgba(255, 255, 255, 0.80);
+    }
+    .home {
+        .title {
+            text-align: center;
+        }
     }
 }
