@@ -19,7 +19,8 @@
   "dependencies": {
     "@material/auto-init": "^0.30.0",
     "gulp": "^3.9.1",
-    "material-components-web": "^0.30.0"
+    "material-components-web": "^0.30.0",
+    "schedule": "^0.1.0"
   },
   "devDependencies": {
     "gh-pages": "^1.1.0",
