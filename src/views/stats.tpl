@@ -1,4 +1,4 @@
-<div class="stats">
+<div class="section stats">
     <h2>Check out some of my stats!</h2>
     {% for stat in stats %}
         <div id="s_{{ stat[0] }}" class="stat coffe">

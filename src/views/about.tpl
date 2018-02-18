@@ -6,3 +6,9 @@ several players on the digital market.</p>
 platform search engine Droopy6.</p>
 <p>He has several years’ tenure in management, including a senior-level position. During this time, he managed to build
 a vast network of experienced online professionals.</p>
+
+<ul class="tags">
+    {% for tag in tags %}
+        <li>#{{ tag }}</li>
+    {% endfor %}
+</ul>

@@ -3,8 +3,8 @@
 @import "_normalise";
 
 html, body { 
-
- }
+    
+}
 
 a, link, h1, h2, h3 { 
     color: #444444;
@@ -54,24 +54,35 @@ body{
     }
 }
 
+.inset{
+    padding: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    border-top: 1px solid #757575;
+    margin: 20px 0px 0px 0px;
+    .button{
+        margin: 7px 0px 0px 6px;
+    }
+}
+
+.button {
+    transition: all 0.3s ease;
+    color: #545454;
+    background: #e0e0e0c7;
+    padding: 7px 12px;
+    display: inline-block;
+    &:hover{
+        color: #b34d4d;
+    }
+    i {
+        padding-right: 5px;
+    }
+}
+
 .social-buttons{
     li {
         display: inline-block;
-        padding-right: 10px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-        .button {
-            transition: all 0.3s ease;
-            color: #545454;
-            background: #e0e0e0c7;
-            padding: 7px 12px;
-            &:hover{
-                color: #b34d4d;
-            }
-            i {
-                padding-right: 5px;
-            }
-        }
+        margin: 0 10px 10px 0px;
     }
 }
 
