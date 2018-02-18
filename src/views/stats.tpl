@@ -1,3 +1,13 @@
+{% set stats = [ 
+    ["coffe","Coffees drank","fas fa-coffee"],
+    ["code","Lines of code", "fas fa-code"],
+    ["projects","Projects done", "fas fa-child"],
+    ["keyboards","Keybords destroyed", "fas fa-keyboard"],
+    ["junior","Arguments with junior developers over UI frameworks...", "fab fa-angular"],
+    ["senior","Arguments with senior developers over software architecture...", "fas fa-code-branch"],
+    ["managers","Arguments with managers over why a framework or architecture was implemented...", "fas fa-chart-bar"]
+]%}
+
 <div class="section stats">
     <h2>Check out some of my stats!</h2>
     {% for stat in stats %}

@@ -1,22 +1,13 @@
 {
-    "enviroment": "dev",
-    "title": "Software Development Consultant",
-    "location": "Bucharest, Romania",
-    "tags": ["php","actionscript","vi","html5","angular","javascript","ec6"],
-    "stats":[
-        ["coffe","Coffees drank","fas fa-coffee"],
-        ["code","Lines of code", "fas fa-code"],
-        ["projects","Projects done", "fas fa-child"],
-        ["keyboards","Keybords destroyed", "fas fa-keyboard"],
-        ["junior","Arguments with junior developers over UI frameworks...", "fab fa-angular"],
-        ["senior","Arguments with senior developers over software architecture...", "fas fa-code-branch"],
-        ["managers","Arguments with managers over why a framework or architecture was implemented...", "fas fa-chart-bar"]
-    ],
-    "links": [
-        {"title": "Linkedin", "button": ["fab fa-linkedin", "https://www.linkedin.com/in/alexandru-neacsu/"]},
-        {"title": "Github", "button": ["fab fa-github", "https://github.com/dark2y"]},
-        {"title": "Medium", "button": ["fab fa-medium", "https://medium.com/@dark2y"]},
-        {"title": "AngelList", "button": ["fab fa-angellist", "https://angel.co/dark2y"] },
-        {"title": "Twitter", "button": ["fab fa-twitter", "https://twitter.com/dark2y"]}
-    ]
+  "enviroment": "dev",
+  "title": "Alexandru Iulian-Neacsu",
+  "tagline": "Software Development Consultant in Bucharest, Romania",
+  "keywords": "consultant, php, development, buisness, romania, developer",
+  "source_link": "https://github.com/dark2y/alexneacsu.me", 
+  "meta_url": "http://alexneacsu.me",
+  "meta_author": "Alex N",
+  "meta_title": "Alexandru Iulian Neacsu",
+  "meta_image": "http://alexneacsu.me/assets/images/favicon.jpg",
+  "meta_description": "Alexandru Neacsu developed an early passion for programming and hi-tech world. He started offering professional web services and multimedia content through his own firm (SixAM) in 2009 and continued in 2011 to collaborate with several players on the digital market!",
+  "meta_locale": "en_US"
 }

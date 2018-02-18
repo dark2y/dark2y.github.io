@@ -14,7 +14,7 @@ var connect = require("gulp-connect"),
 
 var config = require("./settings.json");
 
-gulp.task("s",["sass","build","watch"], function(){
+gulp.task("serve",["sass","build","watch"], function(){
     connect.server({ 
         root: "public", 
         livereload: true 
@@ -85,3 +85,5 @@ gulp.task("watch", function() {
   gulp.watch(["src/**/*.tpl", "./settings.json"], ["build"]);
   gulp.watch(["scss/*.scss"], ["sass"]);
 });
+
+gulp.task("s", ["serve"]);

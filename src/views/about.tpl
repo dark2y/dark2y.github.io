@@ -7,8 +7,6 @@ platform search engine Droopy6.</p>
 <p>He has several years’ tenure in management, including a senior-level position. During this time, he managed to build
 a vast network of experienced online professionals.</p>
 
-<ul class="tags">
-    {% for tag in tags %}
-        <li>#{{ tag }}</li>
-    {% endfor %}
-</ul>
+<div class="tags">
+    #hml5 #css3 #js #nodejs #php #architecture #angular #gulp #python #csharp 
+</div>

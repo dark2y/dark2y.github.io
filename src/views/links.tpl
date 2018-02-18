@@ -1,3 +1,11 @@
+{% set links = [
+    {"title": "Linkedin", "button": ["fab fa-linkedin", "https://www.linkedin.com/in/alexandru-neacsu/"]},
+    {"title": "Github", "button": ["fab fa-github", "https://github.com/dark2y"]},
+    {"title": "Medium", "button": ["fab fa-medium", "https://medium.com/@dark2y"]},
+    {"title": "AngelList", "button": ["fab fa-angellist", "https://angel.co/dark2y"] },
+    {"title": "Twitter", "button": ["fab fa-twitter", "https://twitter.com/dark2y"]}
+] %}
+
 <div class="section links">
     <ul class="social-buttons">
         <li>
