@@ -36,6 +36,7 @@
     "gulp-serve": "^1.4.0",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
+    "require-reload": "^0.2.2",
     "uglify-js": "^3.3.10"
   }
 }

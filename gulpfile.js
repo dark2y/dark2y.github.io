@@ -1,6 +1,7 @@
 var gulp = require("gulp");
 var ghpages = require("gh-pages");
 var util = require("gulp-util");
+var reload = require('require-reload');
 
 var connect = require("gulp-connect"),
     sass = require("gulp-sass"),
@@ -49,7 +50,11 @@ gulp.task("sass", function() {
 // });
 
 gulp.task("build", function(){
-     return gulp
+    
+    // reload the settings
+    var config = reload("./settings.json");
+
+    return gulp
        .src("src/*.tpl")
        .pipe(nunjucks.compile(config))
        .pipe(htmlmin({
@@ -77,6 +82,6 @@ gulp.task("publish", function(){
 })
 
 gulp.task("watch", function() {
-  gulp.watch(["src/**/*.tpl"], ["build"]);
+  gulp.watch(["src/**/*.tpl", "./settings.json"], ["build"]);
   gulp.watch(["scss/*.scss"], ["sass"]);
 });

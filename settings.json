@@ -1,24 +1,22 @@
 {
     "enviroment": "dev",
-    "title": "Consultant",
+    "title": "Software Development Consultant",
     "location": "Bucharest, Romania",
     "tags": ["php","actionscript","vi","html5","angular","javascript","ec6"],
-    "callToAction": "Get in touch with me",
     "stats":[
         ["coffe","Coffees drank","fas fa-coffee"],
         ["code","Lines of code", "fas fa-code"],
         ["projects","Projects done", "fas fa-child"],
         ["keyboards","Keybords destroyed", "fas fa-keyboard"],
-        ["junior","Arguments with junior developers UI frameworks...", "fab fa-angular"],
+        ["junior","Arguments with junior developers over UI frameworks...", "fab fa-angular"],
         ["senior","Arguments with senior developers over software architecture...", "fas fa-code-branch"],
         ["managers","Arguments with managers over why a framework or architecture was implemented...", "fas fa-chart-bar"]
     ],
     "links": [
-        {"title": "Linkedin", "button": ["fa-linkedin", "https://www.linkedin.com/in/alexandru-neacsu/"]},
-        {"title": "Github", "button": ["fa-github", "https://github.com/dark2y"]},
-        {"title": "Medium", "button": ["fa-medium", "https://medium.com/@dark2y"]},
-        {"title": "AngelList", "button": ["fa-angellist", "https://angel.co/dark2y"] },
-        {"title": "Instagram", "button": ["fa-instagram", "http://instagram.com/dark2y"]},
-        {"title": "Twitter", "button": ["fa-twitter", "https://twitter.com/dark2y"]}
+        {"title": "Linkedin", "button": ["fab fa-linkedin", "https://www.linkedin.com/in/alexandru-neacsu/"]},
+        {"title": "Github", "button": ["fab fa-github", "https://github.com/dark2y"]},
+        {"title": "Medium", "button": ["fab fa-medium", "https://medium.com/@dark2y"]},
+        {"title": "AngelList", "button": ["fab fa-angellist", "https://angel.co/dark2y"] },
+        {"title": "Twitter", "button": ["fab fa-twitter", "https://twitter.com/dark2y"]}
     ]
 }
