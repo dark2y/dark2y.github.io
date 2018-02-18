@@ -1,4 +1,3 @@
-
 <ul class="social-buttons">
     <li>
         <a href="#" onclick="return contact_me()" target="_blank" class="button">
@@ -15,11 +14,3 @@
         </li>
     {% endfor %}
 </ul>
-
-<script>
-    function contact_me() {
-        me = atob("aZGFyazJ5QGdtYWlsLmNvbQc".slice(1, -1));
-        window.location.href = "mailto:" + me + "?Subject=Hello";
-        return false;
-    }
-</script>

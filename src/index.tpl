@@ -45,9 +45,10 @@
                     <i class="fas fa-briefcase"></i>{{ title }} in {{ location }}</small>
             </h1>
 
-            {# <a href="#" onclick="return contact_me()" class="call-to-action">Get in touch with me<i class="fas fa-envelope"></i></a> #}
+             {# <a href="#" onclick="return contact_me()" class="call-to-action">Get in touch with me<i class="fas fa-envelope"></i></a> #}
 
              {% include "views/links.tpl" %}
+
              {% include "views/about.tpl" %}
              {% include 'views/tags.tpl' %}
              {% include "views/stats.tpl" %}
@@ -65,6 +66,14 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-1253059-18');
+    </script>
+
+    <script>
+        function contact_me() {
+            me = atob("aZGFyazJ5QGdtYWlsLmNvbQc".slice(1, -1));
+            window.location.href = "mailto:" + me + "?Subject=Hello";
+            return false;
+        }
     </script>
 
 </body>
