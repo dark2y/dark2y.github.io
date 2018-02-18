@@ -4,6 +4,7 @@
     }
     .outer{
         max-width: 100%;
+        margin-top: 30px;
     }
     .container {
         padding: 0px 10px;
@@ -12,6 +13,25 @@
     .home {
         .title {
             text-align: center;
+        }
+    }
+    .social-buttons{
+        background: none;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        li{
+            margin: 0px;
+        }
+        .button{
+            background: none;
+            padding: 10px 10px;
+            i{
+                font-size: 30px;
+            }
+            .label{
+                display: none;
+            }
         }
     }
 }
