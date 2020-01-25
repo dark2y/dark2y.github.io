@@ -1,7 +1,6 @@
 #timeline {
   position: relative;
   display: table;
-  width: 100%;
   margin-top: 20px;
   div {
     &:after {
@@ -31,7 +30,7 @@
   position: relative;
   &:first-child section{
     margin-top: -1.3em;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
   }
   section {
     position: relative;

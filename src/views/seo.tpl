@@ -17,3 +17,29 @@
 <meta name="twitter:title" content="{{ meta_title }}"/>
 <meta name="twitter:description" content="{{ meta_description | truncate(250) }}"/>
 <meta name="twitter:image" content="{{ meta_image }}"/>
+
+<!-- Wazzup -->
+<div style='display:none;'><img alt="Alexandru Neacsu" src="{{ meta_image }}"></div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Person",
+  "name": "Alexandru Iulian Neacsu",
+  "url": "https://alexneacsu.me",
+  "image": "https://alexneacsu.me/assets/images/favicon.jpg",
+  "sameAs": [
+    "https://www.facebook.com/dark2y",
+    "https://twitter.com/dark2y",
+    "https://www.linkedin.com/in/alexandru-iulian-neacsu/",
+    "https://github.com/dark2y",
+    "https://www.youtube.com/user/dark2y",
+    "https://www.instagram.com/dark2y"
+  ],
+  "jobTitle": "CTO",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Cybertech"
+  }  
+}
+</script>

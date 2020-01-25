@@ -3,6 +3,7 @@ var ghpages = require("gh-pages");
 var util = require("gulp-util");
 var reload = require('require-reload');
 
+// Plugins
 var connect = require("gulp-connect"),
     sass = require("gulp-sass"),
     htmlmin = require("gulp-htmlmin"),
@@ -11,6 +12,7 @@ var connect = require("gulp-connect"),
     rename = require("gulp-rename"),
     uglify = require('gulp-uglify'),
     cleanCSS = require('gulp-clean-css');
+    gap = require('gulp-append-prepend');
 
 var config = require("./settings.json");
 
@@ -33,21 +35,10 @@ gulp.task("sass", function() {
     .pipe(gulp.dest("./public/assets/css/"));
 });
 
-// gulp.task("scripts", function(){
-
-//      gulp
-//        .src(includes.js)
-//        .pipe(uglify())
-//        .pipe(rename("app.min.js"))
-//        .pipe(gulp.dest("./public/assets/js/"));
-
-//     gulp
-//       .src(includes.css)
-//       .pipe(cleanCSS())
-//       .pipe(rename("material.min.css"))
-//       .pipe(gulp.dest("./public/assets/css/"));
-      
-// });
+gulp.task('fonts', function() {
+  return gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
+             .pipe(gulp.dest('public/assets/webfonts/'));
+});
 
 gulp.task("build", function(){
     
@@ -62,6 +53,7 @@ gulp.task("build", function(){
            minifyJS: true,
            processScripts: ["application/ld+json"]
          }))
+       .pipe(gap.prependFile('src/signature.txt'))
        .pipe(rename("index.html"))
        .pipe(gulp.dest("public"));
 })
@@ -74,6 +66,7 @@ gulp.task("publish", function(){
 
     gulp.start("sass");
     gulp.start("build");
+    gulp.start("fonts");
     
     return ghpages.publish("public", function(err) {
         util.log("Deployment done");
@@ -83,7 +76,7 @@ gulp.task("publish", function(){
 
 gulp.task("watch", function() {
   gulp.watch(["src/**/*.tpl", "./settings.json"], ["build"]);
-  gulp.watch(["scss/*.scss"], ["sass"]);
+  gulp.watch(["scss/*.scss"], ["sass", "fonts"]);
 });
 
 gulp.task("s", ["serve"]);

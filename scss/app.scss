@@ -20,9 +20,19 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
+.profile-photo {
+    background: url(../images/background.jpg?v1.1) no-repeat;
+    width: 320px;
+    height: 481px;
+    position: fixed;
+    background-position: top left;
+    display: block;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+}
+
 .outer{
-    background: url("../images/background.jpg?v1.1") no-repeat;
-    background-position: bottom right;
     color: #252525;
     margin: 0 auto;
     margin-top: 50px;
@@ -30,8 +40,8 @@ body{
 }
 
 .container {
-    background: rgba(255,255,255,0.8);
-    text-align: justify;
+    background: #ffffffcc;
+    text-align: left;
     min-height: 908px;
     height: 100%;
 }
@@ -176,5 +186,6 @@ body{
 
 /** Other stuff **/
 
+@import "fonts";
 @import "timeline";
 @import "responsive";

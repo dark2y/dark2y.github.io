@@ -9,7 +9,7 @@
 <div class="section links">
     <ul class="social-buttons">
         <li>
-            <a href="#" onclick="return contact_me()" target="_blank" class="button">
+            <a href="#" onclick="return email_me()" target="_blank" class="button">
                 <i class="fas fa-envelope"></i>
                 <span class="label">Email</span>
             </a>
@@ -22,5 +22,35 @@
                 </a>
             </li>
         {% endfor %}
+        <a id="share_button" href="#" onclick="return share_me()" target="_blank" class="button">
+                <i class="fas fa-share-square"></i>
+                <span class="label">Share</span>
+        </a>
     </ul>
 </div>
+
+<script>
+function email_me(e) {
+    me = atob("aZGFyazJ5QGdtYWlsLmNvbQc".slice(1, -1));
+    window.location.href = "mailto:" + me + "?Subject=Hello";
+    return false;
+}
+
+function share_me(e){
+    navigator.share({
+        title: document.title,
+        text: "Get in contact with Alexandru I. Neacsu at",
+        url: window.location.href
+    });
+    return false;
+}
+
+var share = document.getElementById("share_button");
+
+if (navigator.share) {
+    share.style.display = "inline-block";
+} else {
+    share.style.display = "none";
+}
+
+</script>
