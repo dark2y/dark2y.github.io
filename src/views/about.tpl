@@ -1,6 +1,4 @@
 
-<p>
-
 <div id="timeline">
     <section class="year">
           <h3>1989</h3>
