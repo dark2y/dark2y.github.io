@@ -1,0 +1,115 @@
+#timeline {
+    position: relative;
+    display: table;
+    width: 100%;
+    margin-top: 4.5em;
+  div {
+    &:after {
+      content: '';
+      width: 2px;
+      position: absolute;
+      top: .5rem;
+      bottom: 0rem;
+      left: 60px;
+      z-index: 1;
+      background: #ff584f;
+    }
+  }
+  h3 {
+    top: 5rem;
+    color: #ff584f;
+    margin: 0;
+    font: {
+      size: 1em;
+      weight: bold;
+    }
+    @media (min-width: 62em) {
+      font-size: 1.1em;
+    }
+  }
+  section.year {
+  position: relative;
+  &:first-child section{
+    margin-top: -1.3em;
+    padding-bottom: 0px;
+  }
+  section {
+    position: relative;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.8em;
+      .born {
+        color: #f6443b;
+        font-size: 25px;
+        margin-bottom: 10px;
+        margin-top: -20px;
+      }
+    }
+    h4 {
+      position: absolute;
+      bottom: 0;
+      font: {
+        size: .9em;
+        weight: 400;
+      }
+      line-height: 1.2em;
+      margin: 0;
+      padding: 0 0 0 89px;
+      color: #ff3c3c;
+      @media (min-width: 62em) {
+        font-size: 1em;
+      }
+    }
+    ul {
+      list-style-type: none;
+      padding: 0 0 0 75px;
+      margin: -1.35rem 0 1em;
+      font-size: 1em;
+      @media (min-width: 62em) {
+        font-size: 1.1em;
+        padding: 0 0 0 81px;
+      }
+      &:last-child {
+        margin: {
+          bottom: 0;
+        }
+      }
+      &:first-of-type:after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: #ff3c3c;
+        border: 2px solid #FFFFFF;
+        border-radius: 100px;
+        position: absolute;
+        left: 54px;
+        top: 3px;
+        z-index: 2;
+      }
+      li {
+        margin-left: .5rem;
+        &:before {
+          content: '';
+          margin-left: -.5rem;
+          padding-right: .3rem;
+        }
+        &:not(:first-child) {
+          margin-top: .5rem;
+        }
+        span.price {
+          color: mediumturquoise;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+#price {
+  display: inline;
+}
+
+svg {
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}

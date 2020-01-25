@@ -32,5 +32,8 @@
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "require-reload": "^0.2.2"
+  },
+  "dependencies": {
+    "gh-pages": "^2.2.0"
   }
 }

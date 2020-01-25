@@ -10,6 +10,9 @@ a, link, h1, h2, h3 {
 ul, ol {
     margin: 0;
     padding: 0;
+    li {
+        list-style: none;
+    }
 }
 
 body{
@@ -124,6 +127,54 @@ body{
     margin-bottom: 0px;
 }
 
+.years{
+    li {
+        color: #353535;
+        list-style: none;
+        margin: 16px 0px;
+        b {
+            color: #ef2020;
+            font-size: 25px;
+            padding: 0px 6px 0px 0px;
+            &:after {
+                content: " ";
+                // border-left: 1px solid #000;
+                // height: 20px;
+                // /* width: 1px; */
+                // display: block;
+                // margin-left: 20px;
+            }
+        }
+    }
+}
+
+.speech-bubble {
+    position: relative;
+    background: #efefef;
+    border-radius: .4em;
+    height: 60px;
+    width: 190px;
+    top: -14px;
+    left: 20px;
+    padding: 11px 14px;
+    font-size: 12px;
+    &:after{ 
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-right-color: #efefef;
+        border-left: 0;
+        border-bottom: 0;
+        margin-top: -10px;
+        margin-left: -20px;
+    }
+}
+
 /** Other stuff **/
 
+@import "timeline";
 @import "responsive";

@@ -19,7 +19,7 @@
     <link href="assets/css/app.css?v1.0" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">  
+    <script src="https://kit.fontawesome.com/50613e7ac3.js" crossorigin="anonymous"></script>
 
 </head>
 
