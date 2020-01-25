@@ -1,5 +1,5 @@
 {
-    "short_name": "alexneacsu",
+    "short_name": "Alexandru Iulian Neacsu",
     "name": "Alexandru Iulian Neacsu",
     "icons": [
       {
@@ -14,8 +14,8 @@
       }
     ],
     "start_url": "/",
-    "background_color": "#3367D6",
+    "background_color": "#ffffffcc",
     "display": "standalone",
     "scope": "/alexneacsu/",
-    "theme_color": "#3367D6"
+    "theme_color": "#ff584f"
   }
