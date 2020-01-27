@@ -2,17 +2,15 @@
   position: relative;
   display: table;
   margin-top: 20px;
-  div {
-    &:after {
-      content: '';
-      width: 2px;
-      position: absolute;
-      top: .5rem;
-      bottom: 0rem;
-      left: 60px;
-      z-index: 1;
-      background: #ff584f;
-    }
+  &:after {
+    content: '';
+    width: 2px;
+    position: absolute;
+    top: .5rem;
+    bottom: 1em;
+    left: 60px;
+    z-index: 1;
+    background: #ff584f;
   }
   h3 {
     top: 5rem;
@@ -27,21 +25,15 @@
     }
   }
   section.year {
-  position: relative;
-  &:first-child section{
-    margin-top: -1.3em;
-    padding-bottom: 20px;
-  }
-  section {
     position: relative;
-    padding-bottom: 0.5em;
-    margin-bottom: 0.8em;
-      .born {
-        color: #f6443b;
-        font-size: 25px;
-        margin-bottom: 10px;
-        margin-top: -20px;
-      }
+    b, a{
+      color: #a51313;
+      font-weight: 500;
+    }
+    section {
+      position: relative;
+      margin-top: 0px;
+      margin-bottom: 35px;
     }
     h4 {
       position: absolute;

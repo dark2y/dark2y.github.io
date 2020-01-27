@@ -137,23 +137,12 @@ body{
     margin-bottom: 0px;
 }
 
-.years{
-    li {
-        color: #353535;
-        list-style: none;
-        margin: 16px 0px;
+#statistics {
+    h2 {
+    }
+    .counter {
         b {
-            color: #ef2020;
-            font-size: 25px;
-            padding: 0px 6px 0px 0px;
-            &:after {
-                content: " ";
-                // border-left: 1px solid #000;
-                // height: 20px;
-                // /* width: 1px; */
-                // display: block;
-                // margin-left: 20px;
-            }
+            color: #ff584f;
         }
     }
 }
