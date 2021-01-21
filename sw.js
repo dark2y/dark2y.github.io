@@ -3,9 +3,13 @@ const CACHE_NAME = 'alexneacsu-me';
 const toCache = [
   '/',
   '/index.html',
-  '/assets/css/app.css',
+  '/manifest.json',
+  '/favicon.ico',
+  '/assets/css/app.css?v1.0',
   '/assets/images/background.jpg',
   '/assets/images/favicon.jpg',
+  '/assets/webfonts//fa-solid-900.ttf',
+  '/assets/webfonts//fa-brands-400.ttf'
 ];
 
 self.addEventListener('install', function(event) {
