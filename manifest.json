@@ -5,7 +5,7 @@
     "display": "fullscreen",
     "theme_color": "#ff584f",
     "background_color": "#ffffffcc",
-    "prefer_related_applications": "false",
+    "prefer_related_applications": false,
     "lang": "en",
     "dir": "ltr",
     "orientation": "any",

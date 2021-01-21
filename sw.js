@@ -5,7 +5,7 @@ const toCache = [
   '/index.html',
   '/manifest.json',
   '/favicon.ico',
-  '/assets/css/app.css?v1.0',
+  '/assets/css/app.css',
   '/assets/images/background.jpg',
   '/assets/images/favicon.jpg',
   '/assets/webfonts//fa-solid-900.ttf',
