@@ -83,7 +83,7 @@
                             count_to("keyboards", (4380 * (1 / 360)), 1, function(){
                                     count_to("junior", (4380 * (1 / 7)), 1, function(){
                                         count_to("senior", (4380 * (1 / 11)), 1, function(){
-                                            count_to("managers",(43800*3), 1000, function(){
+                                            count_to("managers",(4380*3), 1000, function(){
                                                 
                                             });
                                         });
