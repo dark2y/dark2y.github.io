@@ -14,8 +14,7 @@
       }
     ],
     "start_url": "/",
-    "background_color": "#ffffffcc",
-    "display": "standalone",
-    "scope": "/alexneacsu/",
-    "theme_color": "#ff584f"
+    "display": "fullscreen",
+    "theme_color": "#ff584f",
+    "background_color": "#ffffffcc"
   }
