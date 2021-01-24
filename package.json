@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "gulp s",
-    "publish": "gulp publish"
+    "start": "gulp s",
+    "publish": "gulp publish",
+    "upload": "gulp publish"
   },
   "repository": {
     "type": "git",

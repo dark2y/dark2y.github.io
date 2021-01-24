@@ -45,7 +45,9 @@
             </div>
 
              {% include "views/timeline.tpl" %}
+             {% include "views/what-i-love.tpl" %}
              {% include "views/stats.tpl" %}
+
              {% include 'views/how-its-made.tpl' %}
 
         </div>
