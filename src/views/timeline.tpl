@@ -1,5 +1,5 @@
 <div id="timeline">
-  {% for section in timeline %}
+  {% for section in timeline | reverse %}
     <section class="year">
       <h3>{{ section.year }}</h3>
       {% for line in section.lines %}

@@ -1,21 +1,21 @@
 {% set stats = [ 
-    ["coffe","Coffees drank","fas fa-coffee"],
-    ["code","Lines of code", "fas fa-code"],
-    ["projects","Projects done", "fas fa-child"],
-    ["keyboards","Keybords destroyed", "fas fa-keyboard"],
-    ["junior","Arguments with junior developers over UI frameworks...", "fab fa-angular"],
-    ["senior","Arguments with senior developers over software architecture...", "fas fa-code-branch"],
-    ["managers","Arguments with managers over why a framework or architecture was implemented...", "fas fa-chart-bar"]
+    [8760    , 100,"coffe","Coffees drank","fas fa-coffee"],
+    [8100000 , 15000,"code","Lines of code", "fas fa-code"],
+    [219     , 1,"projects","Projects completed", "fas fa-child"],
+    [12.5    , 1,"keyboards","Keybords destroyed", "fas fa-keyboard"],
+    [398     , 1,"junior","Arguments with junior developers over UI frameworks...", "fab fa-angular"],
+    [12      , 1,"senior","Arguments with senior developers over software architecture...", "fas fa-code-branch"],
+    [13100   , 100,"managers","Arguments with managers over why a framework or architecture was implemented...", "fas fa-chart-bar"]
 ]%}
 
 <div id="statistics" class="section stats">
     <h2 id="checkout">Check out some of my stats!</h2>
     {% for stat in stats %}
-        <div id="s_{{ stat[0] }}" class="stat coffe">
-            {{ stat[1] }}
+        <div id="s_{{ stat[2] }}" data-step="{{ stat[1] }}" data-target="{{ stat[0] }}" class="stat">
+            {{ stat[3] }}
             <span class="counter">
                 <b>0</b>
-                <i class="{{ stat[2] }}"></i>
+                <i class="{{ stat[4] }}"></i>
             </span>
         </div>
     {% endfor %}
@@ -25,7 +25,12 @@
 
     var is_started = false;
 
+    var stats = document.getElementById("statistics")
+                        .getElementsByClassName("stat");
+            
+
     function is_visible(el) {
+
         var rect = el.getBoundingClientRect();
         var elemTop = rect.top;
         var elemBottom = rect.bottom;
@@ -35,13 +40,17 @@
         // Partially visible elements return true:
         //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
         return isVisible;
+
     }
 
-    function count_to(element,end_at,step,next){
+    function count_to(next){
 
         var locale = {minimumFractionDigits: 3, maximumSignificantDigits: 3};
+        var element = stats[next];
 
-        var element = document.getElementById("s_" + element);
+        var step = parseFloat(element.dataset.step);
+        var end_at = parseFloat(element.dataset.target);
+
         var label = element.getElementsByTagName("b")[0];
         var index = 0;
 
@@ -57,8 +66,8 @@
                 index = 0;
                 label = null;
                 element = null;
-                if(next)
-                    next(element,label,end_at);
+                if(next < stats.length - 1)
+                    count_to(next+1);
             }
         }, 2)
 
@@ -76,6 +85,9 @@
         if(is_visible(element)){
 
             is_started = true;
+            count_to(0);
+
+            /*
 
             count_to("coffe", 4380 * 2, 100, function(el,label,stats){
                 count_to("code", 4380 * 1850, 15000, function(){
@@ -84,14 +96,13 @@
                                     count_to("junior", (4380 * (1 / 7)), 1, function(){
                                         count_to("senior", (4380 * (1 / 11)), 1, function(){
                                             count_to("managers",(4380*3), 1000, function(){
-                                                
                                             });
                                         });
                                 })
                             })
                         });
                 });
-            });
+            }); */
 
         }
 

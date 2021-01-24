@@ -31,7 +31,7 @@
 
 <script>
 function email_me(e) {
-    me = atob("aZGFyazJ5QGdtYWlsLmNvbQc".slice(1, -1));
+    me = atob("aYWxleGFuZHJ1Lm5lYWNzdUBjeWJlcnRlY2gucm8c".slice(1, -1));
     window.location.href = "mailto:" + me + "?Subject=Hello";
     return false;
 }

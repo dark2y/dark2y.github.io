@@ -21,7 +21,15 @@ body{
 }
 
 .profile-photo {
-    background: url(../images/background.jpg?v1.1) no-repeat;
+    &:before {
+        content: '';
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        display: block;
+    }
+    background: url(../images/background.jpg) no-repeat;
     width: 320px;
     height: 481px;
     position: fixed;
@@ -35,12 +43,21 @@ body{
 .outer{
     color: #252525;
     margin: 0 auto;
-    margin-top: 50px;
     max-width: 700px;
 }
 
+.header-wraper {
+    padding-bottom: 1em;
+    // position: sticky;
+    // top: 0;
+    // background: linear-gradient(180deg, white 80%, transparent);
+    // padding-bottom: 4em;
+    // padding-top: 0.2em;
+    // z-index: 1000;
+}
+
 .container {
-    background: #ffffffcc;
+    // background: #ffffffcc;
     text-align: left;
     min-height: 908px;
     height: 100%;
@@ -60,16 +77,6 @@ body{
     }
     i{
         padding-left: 10px;
-    }
-}
-
-.inset{
-    padding: 15px 0px;
-    font-size: 13px;
-    font-weight: bold;
-    border-top: 1px solid #757575;
-    .button{
-        margin: 0px 0px 0px 6px;
     }
 }
 
@@ -170,6 +177,23 @@ body{
         border-bottom: 0;
         margin-top: -10px;
         margin-left: -20px;
+    }
+}
+
+.how-its-made {
+    // position: sticky;
+    // bottom: 0;
+    // background: #fff;
+    // z-index: 1000;
+    // width: 100%;
+    .inset{
+        padding: 0.5em 0.5em 0 0.5em;
+        font-size: 13px;
+        font-weight: bold;
+        border-top: 1px solid #f6443b;
+        .button{
+            margin: 0px 0px 0px 6px;
+        }
     }
 }
 

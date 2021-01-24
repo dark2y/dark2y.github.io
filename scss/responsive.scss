@@ -7,7 +7,6 @@
     }
     .outer{
         max-width: 100%;
-        margin-top: 30px;
         .container {
             padding: 0px 10px;
             transition: background-color 0.5s ease;
@@ -24,7 +23,7 @@
             margin: 0px;
         }
         .button{
-            background: #f1f1f1;
+            background: transparent;
             padding: 0.5em 0.5em;
             i{
                 font-size: 30px;
@@ -33,5 +32,9 @@
                 display: none;
             }
         }
+    }
+    .view-source{
+        line-height: 0;
+        font-size: 0.8em;
     }
 }
