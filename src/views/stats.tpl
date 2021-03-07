@@ -1,7 +1,7 @@
 {% set stats = [ 
     [10220   , 50,    "Coffees drank","fas fa-coffee"],
     [8100000 , 15000, "Lines of code", "fas fa-code"],
-    [219     , 1,     "Projects completed", "fas fa-child"],
+    [241     , 1,     "Projects completed", "fas fa-child"],
     [12.5    , 1,     "Keybords destroyed", "fas fa-keyboard"],
     [150     , 1,     "Time spent trying to exit VIM ( in hours )", "fab fa-keyboard"],
     [250     , 1,     "Arguments with senior developers over implementation", "fas fa-code-branch"],

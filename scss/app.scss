@@ -146,6 +146,12 @@ body{
 .what-i-love {
     .skill-wraper {
         padding: 0.5em 0em;
+        .category {
+            display: block;
+            margin: 1em 0em;
+            color: #ff584f;
+            padding-bottom: 6px;
+        }
         .skill { 
             font-size: 1.1em;
             list-style: circle;
@@ -156,6 +162,11 @@ body{
             display: block;
             padding: 1em 0em;
             font-size: 1.3em;
+            small {
+                font-size: 0.6em;
+                display: block;
+                margin-top: 2.2em;            
+            }
         }
     }
 }
