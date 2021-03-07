@@ -51,9 +51,10 @@
 } %}
 
 <div id="what_i_love" class="section what-i-love">
-    <h2 id="checkout">What I'm good at:</h2>
+    <h2 data-aos="fade-up" id="checkout">What I'm good at:</h2>
      <div class="skill-wraper">
      {% for index, category in skills %}
+        <div data-aos="fade-up" class="cat-holder">
         <b class="category">{{index}}</b>
         {% for skil in category %}
             {% set font_size = [1.1,1.2] | random %}
@@ -65,8 +66,9 @@
                 {% endif %}
             </span>
         {% endfor %}
+        </div>
     {% endfor %}
-        <li class="skill more">&#8230;
+        <li data-aos="fade-up" class="skill more">&#8230;
             <small> Seams like much, doesn't it ? This is what I expect when I read "CTO" on LinkedIn 😊️</small>
             {# <small>( Later Edit: having to list all of the skills above has made me realise I am a colossal nerd 🤓️ )</small> #}
         </li>

@@ -22,7 +22,6 @@
     
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 
-
 </head>
 
 <body onscroll="scroll()">
@@ -34,10 +33,15 @@
            <div class="header-wraper">
 
                 <h1 class="title">
-                    <a href="{{ meta_url }}">{{ title }}</a>
-                    <small>
-                        <i class="fas fa-briefcase"></i>{{ tagline }}
-                    </small>
+                
+                <a title="Party Mode" href="javascript:;">
+                    <div class="glitch" data-text=" {{ title }}"> {{ title }}</div>
+                </a>
+                   
+                <small>
+                    <i class="fas fa-briefcase"></i>{{ tagline }}
+                </small>
+
                 </h1>
 
                 {% include "views/links.tpl" %}
@@ -58,19 +62,19 @@
     <!-- PWA SW -->
     <script>
     
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/sw.js').then(function(registration) {
-                console.log('ServiceWorker registration successful with scope: ', registration.scope);
-            }, function(err) {
-                console.log('ServiceWorker registration failed: ', err);
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
             });
-        });
-    }
+        }
 
-    window.addEventListener('beforeinstallprompt', (event) => {
-        event.preventDefault();
-    });
+        window.addEventListener('beforeinstallprompt', function(event) {
+            event.preventDefault();
+        });
 
     </script>
 
@@ -82,6 +86,18 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-1253059-18');
+    </script>
+
+    <!-- AOS -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 10, // offset (in px) from the original trigger point
+            easing: 'out', // default easing for AOS animations
+        });
     </script>
 
 

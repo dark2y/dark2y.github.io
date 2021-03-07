@@ -8,7 +8,7 @@
     [13100   , 100,   "Arguments with managers what was implemented vs specs...", "fas fa-chart-bar"]
 ]%}
 
-<div id="statistics" class="section stats">
+<div  data-aos="fade-up" id="statistics" class="section stats">
     <h2 id="checkout">Check out some of my stats!</h2>
     {% for stat in stats %}
         <div id="s_{{ loop.index }}" data-target="{{ stat[0] }}" data-step="{{ stat[1] }}" class="stat">
