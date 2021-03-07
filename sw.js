@@ -7,7 +7,7 @@ const toCache = [
   '/favicon.ico',
   '/assets/css/app.css',
   '/assets/images/background.png',
-  '/assets/images/favicon.jpg',
+  '/assets/images/favicon.png',
   '/assets/webfonts//fa-solid-900.ttf',
   '/assets/webfonts//fa-brands-400.ttf'
 ];
