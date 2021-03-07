@@ -18,8 +18,10 @@
 
     {% include "views/seo.tpl" %}
 
+    <link rel="preload" href="assets/css/app.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Lato:400,700,900" as="style">
+
     <link href="assets/css/app.css" rel="stylesheet">
-    
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 
 </head>

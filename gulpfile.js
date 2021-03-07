@@ -51,6 +51,13 @@ gulp.task("build", function(){
        .pipe(htmlmin({
            collapseWhitespace: true,
            minifyJS: true,
+           minifyCSS: true,
+           removeComments: true,
+           removeRedundantAttributes: true,
+           removeOptionalTags: true,
+           removeEmptyAttributes: true,
+           removeScriptTypeAttributes: true,
+           useShortDoctype: true,
            processScripts: ["application/ld+json"]
          }))
        .pipe(gap.prependFile('src/signature.txt'))
