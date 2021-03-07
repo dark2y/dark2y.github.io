@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp s",
     "publish": "gulp publish",
-    "upload": "gulp publish"
+    "upload": "gulp publish",
+    "preinstall": "npx npm-force-resolutions"
   },
   "repository": {
     "type": "git",
@@ -38,5 +39,8 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
     "gh-pages": "^2.2.0"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
   }
 }
